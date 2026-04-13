@@ -12,7 +12,7 @@
 <body>
      <!-- <p>Navbar</p> -->
     <nav class="navbar navbar-expand-lg fixed-top">
-  <div class="container-fluid">
+  <div class="container">
     <a class="navbar-brand me-auto" href="index.html">
       <img class="logo-navbar" src="../img/logo niel negro final.png" alt="" style="height: 50px;">
     </a>
@@ -27,14 +27,31 @@
       <div class="offcanvas-body">
         <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
           <li class="nav-item">
-            <a class="nav-link mx-lg-2 active " aria-current="page" href="#">Home</a>
+            <a class="nav-link mx-lg-2 active " aria-current="page" href="#">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-lg-2" href="#">Sobre Niel</a>
+            <a class="nav-link mx-lg-2" href="#">Sobre mí</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link mx-lg-2" href="#">Oportunidad</a>
-          </li>
+           <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Servicios
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Libros</a></li>
+            <li><a class="dropdown-item" href="#">Mentorías</a></li>
+            <li><a class="dropdown-item" href="#">Conferencias</a></li>
+          </ul>
+        </li>
+          <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Oportunidad
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Recursos gratis</a></li>
+            <li><a class="dropdown-item" href="#">Afiliados</a></li>
+            <li><a class="dropdown-item" href="#">Algo más...</a></li>
+          </ul>
+        </li>
           <li class="nav-item">
             <a class="nav-link mx-lg-2" href="#">Testimonios</a>
           </li>
@@ -45,14 +62,23 @@
       </div>
     </div>
     <a href="link" class="login-button">Acceso</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+    <button class="navbar-toggler pe-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
   </div>
 </nav>
     <!-- <p>el Hero</p> -->
-     <section class="hero-section">
-
+     <section class="hero-section ">
+      <div class="container d-flex align-items-center justify-items-center justify-content-center text-white flex-column">
+        <h1>
+          Transforma Tu Vida Con <span style="color: #D4AF37;"><strong>Libertad Financiera</strong></span>
+        </h1><br>
+       <h5>Trázate una meta, divídela en objetivos y comienza a tomar acciones sobre cada objetivo, si yo pude tu también puedes…</h5>
+      </div>
+      <div class="hero-buttons d-flex align-items-center justify-items-center justify-content-center gap-3 mt-4">
+        <a href="#contacto" class="btn-primary-custom">Conoce a Niel</a>
+      </div>
+        
      </section>
      
 
