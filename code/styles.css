@@ -1,5 +1,5 @@
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family:'sans Fallback' , sans-serif;
   
 }
    /* Navbar ... */
@@ -13,6 +13,10 @@ body {
     background-color: #fff;
 }
 
+.navbar-nav{
+    font-size: 18px;
+}
+
 .navbar-brand {
     font-weight: 500;
     color: #000;
@@ -22,7 +26,7 @@ body {
 .login-button{
     background-color: #257beb;
     color: #fff;
-    font-size: 14px;
+    font-size: 16px;
     padding: 8px 20px;
     border-radius: 50px;
     text-decoration: none;
@@ -123,10 +127,10 @@ body {
 
 /* p */
 .hero-subtitle {
-    font-size: clamp(1.5rem, 2.7vw, 1.6rem); /* agrandar el texto */
+    font-size: clamp(1.6rem, 2.7vw, 1.7rem); /* agrandar el texto */
     color: #ffffff;                            
-    font-weight: 500;                          /* un poco más de grosor */
-    line-height: 1.7;
+    font-weight: 550;                          /* un poco más de grosor */
+    line-height: 1.8;
     margin-bottom: 2.5rem;
     max-width: 600px;
     text-shadow: 1px 1px 8px rgba(0,0,0,0.8);
@@ -266,6 +270,45 @@ body {
     .about-stats {
         grid-template-columns: 1fr;
     }
+}
+
+/* <============= Sección: Conoce a Niel =============> */
+.sobre-niel {
+    background-color: #f8f9fa;
+}
+.niel-subtitle{
+    font-size: 22px;
+}
+.niel-section {
+    padding: 4rem 0 5rem;
+}
+
+
+
+/* ============ TESTIMONIOS ============ */
+.card-img-filter{
+    filter: brightness(0.5);
+    
+}
+
+.card{
+    transition-duration: .6s;
+    clip-path: polygon(
+        50% 0, 100% 0, 100% 50%, 100% 100%, 50% 100%, 0 100%, 0 50%, 0 0
+    );
+}
+.card-effect:hover .card{
+    clip-path: polygon(
+        50% 0, 50% 0, 100% 50%, 100% 50%, 50% 100%, 50% 100%, 0 50%, 0 50%
+    );
+}
+
+.card-img-overlay{
+    transition-duration: .6s;
+    
+}
+.card-effect:hover .card-img-overlay{
+    transform: scale(0.9);
 }
 
 
