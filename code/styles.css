@@ -1,7 +1,15 @@
 body {
     font-family:'sans Fallback' , sans-serif;
-  
+
+html{
+    scroll-behavior: smooth;
 }
+}
+section [ id]{
+    scroll-margin-top: 142px;
+}
+ 
+
    /* Navbar ... */
 .navbar{
     top: 0;
@@ -274,14 +282,42 @@ body {
 
 /* <============= Sección: Conoce a Niel =============> */
 .sobre-niel {
-    background-color: #f8f9fa;
+    /* background-color: rgb(232, 244, 253); */
+    background-color: #F4F7FB;
+     padding: 4rem 0 5rem;
+}
+.niel-foto-wrapper {
+    height: 500px;
+    overflow: hidden;
+    border-radius: 16px;
+    padding: auto ;
+  
+}
+.niel-foto {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    
 }
 .niel-subtitle{
+    font-size: 20px;
+}
+.btn-primary:hover {
+    background-color: #1a9fec;
+    transform: scale(1.05);
+    transition: 0.3s;
+    margin: 0;
+}
+.container .social{
+    margin-top: 30px;
+}
+.container .social i{
     font-size: 22px;
+    padding: 0px 10px;
+
 }
-.niel-section {
-    padding: 4rem 0 5rem;
-}
+
 
 
 

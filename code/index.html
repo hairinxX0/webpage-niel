@@ -8,11 +8,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
-
-<!--======== NAVBAR ======== -->
-    <nav class="navbar navbar-expand-lg fixed-top">
+<header>
+  <!--======== NAVBAR ======== -->
+  <nav class="navbar navbar-expand-lg fixed-top">
   <div class="container">
     <a class="navbar-brand me-auto" href="index.html">
       <img class="logo-navbar" src="../img//logos/logo niel negro final.png" alt="" style="height: 50px;">
@@ -28,10 +29,10 @@
       <div class="offcanvas-body">
         <ul class="navbar-nav justify-content-center flex-grow-1 pe-3 text-dark">
           <li class="nav-item">
-            <a class="nav-link mx-lg-2 active " aria-current="page" href="#">Inicio</a>
+            <a class="nav-link mx-lg-2 active " aria-current="page" href="#hero">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-lg-2" href="#">Sobre mí</a>
+            <a class="nav-link mx-lg-2" href="#sobre-mi">Sobre mí</a>
           </li>
            <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -69,9 +70,10 @@
     </button>
   </div>
 </nav>
-
+</header>
+   
 <!-- EL HERO  -->
-     <section class="hero-section ">
+     <section class="hero-section " id="hero">
       <div class="container fluid d-flex align-items-flex-start justify-items-left
       justify-content-center text-white flex-column">
         <h1 class="hero-tittle"> 
@@ -84,13 +86,13 @@
         <a href="#oportunidad" class="btn-C-oportunidad">
             Conoce la oportunidad →
         </a>
-        <a href="#sobre-niel" class="btn-conoce-niel">Conoce a Niel</a>
+        <a href="#sobre-mi" class="btn-conoce-niel">Conoce a Niel</a>
       </div>
       <br>
       </div>
      </section>
 
-     <!-- (se puede colcar una imagen para cortar el header) EN PROCESO -->
+     <!-- (se puede colocar una imagen para cortar el hero) EN PROCESO -->
 
 <!-- SECCION CONTAINER MARCAS -->
       <div class="container-fluid mt-3 bg-light-subtle p-2 banner">
@@ -113,34 +115,79 @@
       </div>
 
      <!-- SECCIÓN SOBRE NIEL -->
-      <section class="sobre-niel" ><br>
+      <section class="sobre-niel" >
          <div class="container">
           <div class="niel-header text-center text-dark ">
-            <h1 class="niel-title mb-2">¿Quién es el Dr.  <span style="color: #257BEB;">Niel Arroe</span>?</h1>
-            <p class="niel-subtitle mb-0">Un líder que ha transformado vidas a través del poder del emprendimiento y el bienestar</p>
-          </div>
+            <h1 id="sobre-mi"class="niel-title mb-2">¿Quién es <span style="color: #257BEB;">Niel Arroe</span>?</h1>
+            <p class="niel-subtitle mb-0">Un líder que ha transformado vidas a través del poder del emprendimiento <br>y el bienestar</p>
+          </div><br>
        <div class="row">
          <!-- imagenes -->
-          <div class="col-lg-6 col-md-6 col-12">
+          <div class="col-lg-6 col-md-12 col-12">
             <div class="niel-foto-wrapper">
               <img src="../img/sobreNiel.png" alt="Niel" class="niel-foto img-fluid">
             </div>
           </div>
         <!-- TEXTO SOBRE NIEL -->
-          <div class="col-lg-6 col-md-6 col-sm-12 ps-lg-4 "><br>
-            <h3> De Soñar con la Libertad a Vivirla: </h3><br>
-            <h5>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam maxime dolorem, sint id et, adipisci cum quas cupiditate nulla porro,
-               officiis perferendis omnis repellat! Cumque nam modi dolores ipsum nihil!</h5><br>
-            <h5>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis deleniti perferendis ducimus, 
-              consequatur animi eos numquam rerum nulla ipsum omnis?</h5>
-              <br>
-               <h5>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis deleniti perferendis ducimus, 
-              consequatur animi eos numquam rerum nulla ipsum omnis?</h5>
-              <br>
-            <a href="#Biografia-niel" class="btn btn-primary">Leer más <i></i></a>
+          <div class="col-lg-6 col-md-12 col-sm-12 ps-lg-4"><br>
+            <h2 style="color: #1C2E40;">De Soñar con la Libertad a Vivirla: </h2>
+           <br>  
+            <h5>Niel Arroe comenzó su camino en DXN con el mismo deseo que <br> muchos: <span style="color: #257BEB;">crear una vida mejor</span>para él y sus familiares.</h5><br>
+            <h5>Hoy, después de más de una década de dedicación, ha alcanzado el rango de <strong>Líder Diamante</strong>, un logro que solo el 1% alcanza. Pero más allá de los títulos, 
+              su verdadero éxito está en las <span style="color: #257BEB;">cientos de vidas transformadas</span> que ha impactado.</h5><br>
+            <h5>Su misión es clara: <i>"Ayudarte a descubrir tu máximo potencial y construir un negocio que te dé tiempo, dinero y libertad."</i></h5><br>
+          
+            <a href="#Biografia-niel" class="btn btn-primary">Leer más →</a>
+            <div class="social">
+            <a href="https://www.facebook.com/nielarroe1" target="_blank" class="text-decoration-none text-dark me-3"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-decoration-none text-dark me-3"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/nielarroe?igsh=OGFrczNzcWxvMmF2" target="_blank" class="text-decoration-none text-dark me-3"><i class="fab fa-instagram"></i></a>
           </div>
           </div>
-       </div>
+          </div><br>
+          <!-- cards logros -->
+          <div class="row g-3 mt-4">
+            <div class="col-6 col-lg-3">
+              <div class="p-3 rounded-3 shadow-sm bg-white">
+                <div class="stat-icon mb-3">
+                  <i class="bi bi-award"></i>
+                </div>
+                <h6 class="fw-bold">Líder Diamante DXN</h6>
+                <p class="text-muted small mb-0">Reconocimiento internacional por excelencia en liderazgo</p>
+              </div>
+            </div>
+          
+            <div class="col-6 col-lg-3">
+              <div class="p-3 rounded-3 shadow-sm bg-white">
+                <div class="stat-icon mb-3">
+                  <i class="bi bi-graph-up-arrow"></i>
+                </div>
+                <h6 class="fw-bold">Crecimiento Sostenido</h6>
+                <p class="text-muted small mb-0">10+ años de resultados consistentes y comprobados</p>
+              </div>
+            </div>
+          
+            <div class="col-6 col-lg-3">
+              <div class="p-3 rounded-3 shadow-sm bg-white">
+                <div class="stat-icon mb-3">
+                  <i class="bi bi-people"></i>
+                </div>
+                <h6 class="fw-bold">Equipo Global</h6>
+                <p class="text-muted small mb-0">Red de emprendedores exitosos en múltiples países</p>
+              </div>
+            </div>
+          
+            <div class="col-6 col-lg-3">
+              <div class="p-3 rounded-3 shadow-sm bg-white">
+                <div class="stat-icon mb-3">
+                  <i class="bi bi-heart"></i>
+                </div>
+                <h6 class="fw-bold">Pasión por Servir</h6>
+                <p class="text-muted small mb-0">Comprometido con el éxito y bienestar de cada persona</p>
+              </div>
+            </div>
+          </div>
+          </div>
       </section><br>
 
 
