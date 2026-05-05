@@ -131,6 +131,7 @@ section [ id]{
     line-height: 1.2;
     margin-bottom: 1.5rem;
     text-shadow: 0 2px 15px rgba(0,0,0,0.7);
+    font-family: Lato, sans-serif;
 } 
 
 /* p */
@@ -283,7 +284,7 @@ section [ id]{
 /* <============= Sección: Conoce a Niel =============> */
 .sobre-niel {
     /* background-color: rgb(232, 244, 253); */
-    background-color: #F4F7FB;
+    background-color: #F5EFEB;
      padding: 4rem 0 5rem;
 }
 .niel-foto-wrapper {
@@ -298,10 +299,25 @@ section [ id]{
     height: 100%;
     object-fit: cover;
     object-position: top;
+    padding: auto;
     
+}
+h1.niel-title{
+    font-family: Sans, "Sans Fallback", sans-serif;
+    color: #1C2E40;
+    font-weight: 500;
 }
 .niel-subtitle{
     font-size: 20px;
+    color: #555;
+}
+.mision{
+    border-left: 4px solid #257BEB;
+    background: rgba(245, 239, 235, 0.6);  /* azul muy suave */
+    border-radius: 0 8px 8px 0;
+    padding: 16px 20px;
+    font-size: 1.05rem;
+    color: #333;
 }
 .btn-primary:hover {
     background-color: #1a9fec;
@@ -309,13 +325,48 @@ section [ id]{
     transition: 0.3s;
     margin: 0;
 }
-.container .social{
-    margin-top: 30px;
+.icon-social{
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1C2E40;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: all 0.3s;
 }
-.container .social i{
-    font-size: 22px;
-    padding: 0px 10px;
+.icon-social:hover{
+    transform: translateY(-3px);
+    background: #257BEB;
+    color: #fff;
+}
 
+/* logros cards */
+
+.stat-icon {
+    width: 52px;
+    height: 51px;
+    background: #e8f1fd;  
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #257BEB;
+    font-size: 1.4rem;
+}
+
+/* hover cards logros */
+.sobre-niel .card-logro {
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.sobre-niel .card-logro:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.12) !important;
 }
 
 
