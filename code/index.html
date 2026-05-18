@@ -9,11 +9,12 @@
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="services.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
+<!--======== NAVBAR ======== -->
 <header>
-  <!--======== NAVBAR ======== -->
   <nav class="navbar navbar-expand-lg fixed-top">
   <div class="container">
     <a class="navbar-brand me-auto" href="index.html">
@@ -36,13 +37,14 @@
             <a class="nav-link mx-lg-2" href="#sobre-mi">Sobre mí</a>
           </li>
            <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" href="#servicios" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Servicios
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Libros</a></li>
-            <li><a class="dropdown-item" href="#">Mentorías</a></li>
             <li><a class="dropdown-item" href="#">Conferencias</a></li>
+            <li><a class="dropdown-item" href="#servicios">Libros</a></li>
+            <li><a class="dropdown-item" href="#">Recursos gratis</a></li>
+            <li><a class="dropdown-item" href="#">Mentorías</a></li>
           </ul>
         </li>
           <li class="nav-item dropdown">
@@ -50,9 +52,7 @@
             Oportunidad
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Recursos gratis</a></li>
             <li><a class="dropdown-item" href="#">Afiliados</a></li>
-            <li><a class="dropdown-item" href="#">Algo más...</a></li>
           </ul>
         </li>
           <li class="nav-item">
@@ -73,49 +73,52 @@
 </nav>
 </header>
    
-<!-- EL HERO  -->
-     <section class="hero-section " id="hero">
-      <div class="container fluid d-flex align-items-flex-start justify-items-left
+    <!-- EL HERO  -->
+<section class="hero-section " id="hero">
+  <div class="container fluid d-flex align-items-flex-start justify-items-left
       justify-content-center text-white flex-column">
-        <h1 class="hero-tittle"> 
-          Transforma Tu Vida Con <span style="color: #257BEB;"><br><strong>Libertad Financiera</strong></span>
-        </h1><br>
-        <p class="hero-subtitle">
-        Trázate una meta, divídela en objetivos y comienza a tomar acciones. Si yo pude, tú también puedes…
-        </p>
-        <div class="hero-buttons d-flex align-items-center justify-items-center justify-content-center gap-3 mt-4">
-        <a href="#oportunidad" class="btn-C-oportunidad">
-            Conoce la oportunidad →
-        </a>
-        <a href="#sobre-mi" class="btn-conoce-niel">Conoce a Niel</a>
-      </div>
-      <br>
-      </div>
-     </section>
+    <h1 class="hero-tittle">
+      Transforma Tu Vida Con <span style="color: #257BEB;"><br><strong>Libertad Financiera</strong></span>
+    </h1><br>
+    <p class="hero-subtitle">
+      Construimos negocios rentables basados en el esfuerzo real, la educación y el liderazgo con propósito. Sin atajos.
+
+    </p>
+    <div class="hero-buttons d-flex align-items-center justify-items-center justify-content-center gap-3 mt-4">
+      <a href="#servicios" class="btn-C-oportunidad">
+        Conoce nuestros servicios →
+      </a>
+      <a href="#sobre-mi" class="btn-conoce-niel">Conoce a Niel</a>
+    </div>
+    <br>
+  </div>
+</section>
 
      <!-- (se puede colocar una imagen para cortar el hero) EN PROCESO -->
 
-<!-- SECCION CONTAINER MARCAS -->
+      <!-- SECCION CONTAINER MARCAS -->
+
       <div class="container-fluid mt-3 bg-light-subtle p-2 banner">
          <a href="">
           <img src="../img/Marcas/Logo Niel Azul y blanco.png" alt="" />
         </a>
-        <a href="">
+        <a href="https://udaxen.com/" target="_blank">
           <img
             src="../img/Marcas/image.png" alt=""/>
         </a>
-        <a href="">
+        <a href="https://www.dxn2ulatam.com/" target="_blank">
           <img src="../img/Marcas/dxn.png" alt="" />
         </a>
-        <a href="">
+        <a href="https://www.amazon.com/-/es/FATEMI-GHANI-ebook/dp/B09XDJFLF7" target="_blank">
           <img src="../img/Marcas/amazon.png" alt="" />
         </a>
-        <a href="">
+        <a href="https://www.facebook.com/dxnperu.sjl/?locale=es_LA">
           <img src="../img/Marcas/dxnSJL.png" alt="" />
         </a>
       </div>
 
      <!-- SECCIÓN SOBRE NIEL -->
+
       <section class="sobre-niel" >
          <div class="container">
           <div class="niel-header text-center  ">
@@ -138,8 +141,7 @@
               su verdadero éxito está en las <span style="color: #257BEB;">cientos de vidas transformadas</span> que ha impactado.</p>
               <div class="mision my-4">
                 <p class="fs-5">
-                  Su misión es clara: <i>"Ayudarte a descubrir tu máximo potencial y
-                  construir un negocio que te dé tiempo, dinero y libertad."</i>
+                  Su misión es clara: <i>"Formar líderes reales con las herramientas y la mentalidad correcta para construir negocios internacionales y lograr independencia financiera."</i>
                 </p>
               </div>
             <a href="#Biografia-niel" class="btn btn-primary">Leer más →</a>
@@ -193,8 +195,185 @@
             </div>
           </div>
           </div>
-      </section><br>
+      </section>
 
+      <!-- SECCIÓN SERVICIOS -->
+
+      <section id="servicios" class="services-section">
+        <div class="container">
+          <div class="d-flex flex-column flex-lg-row align-items-lg-end justify-content-between gap-3 mb-4">
+            <div class="services-intro">
+              <h2 class="display-6 mb-2">Conoce Nuestros Servicios</h2>
+            </div>
+            <div class="d-flex align-items-center gap-2">
+              <span class="badge rounded-pill text-bg-primary">Actualizado</span>
+              <span class="text-muted small">Mayo 2026</span>
+            </div>
+          </div>
+          <!-- TABS de los servicios -->
+          <ul class="nav nav-underline gap-3 services-tabs" id="serviciosTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="libros-tab" data-bs-toggle="tab" data-bs-target="#libros-pane" type="button" role="tab" aria-controls="libros-pane" aria-selected="false">Libros</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="conferencias-tab" data-bs-toggle="tab" data-bs-target="#conferencias-pane" type="button" role="tab" aria-controls="conferencias-pane" aria-selected="true">Conferencias</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="recursos-tab" data-bs-toggle="tab" data-bs-target="#recursos-pane" type="button" role="tab" aria-controls="recursos-pane" aria-selected="false">Recursos gratuitos</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="mentorias-tab" data-bs-toggle="tab" data-bs-target="#mentorias-pane" type="button" role="tab" aria-controls="mentorias-pane" aria-selected="false">Mentorías</button>
+            </li>
+          </ul>
+          <!-- Libros -->
+          <div class="tab-content mt-4" id="serviciosTabContent">
+            <div class="tab-pane fade" id="libros-pane" role="tabpanel" aria-labelledby="libros-tab" tabindex="0">
+              <div class="services-panel">
+                <div class="row g-4 align-items-stretch">
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card service-card h-100">
+                      <img src="../img/Libro1.png" class="card-img-top" alt="Portada del libro">
+                      <div class="card-body">
+                        <h5 class="card-title"><strong>La Fórmula del 1%</strong></h5>
+                        <p class="card-text">Autor: Arroe Aguirre, Niel  |  2024-07-15</p>
+                        <a href="https://isbn.bnp.gob.pe/catalogo.php?mode=busqueda_menu&id_autor=90479" class="btn btn-primary w-100" target="_blank">Leer ahora →</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-8">
+                    <div class="h-100 p-4 rounded-4 bg-light d-flex flex-column justify-content-between">
+                      <div>
+                        <h5 class="fw-semibold mb-3">Lo que vas a encontrar</h5>
+                        <div class="row g-3">
+                          <div class="col-12 col-sm-6">
+                            <div class="service-chip"><i class="bi bi-check2-circle"></i> Hábitos de alto impacto</div>
+                          </div>
+                          <div class="col-12 col-sm-6">
+                            <div class="service-chip"><i class="bi bi-check2-circle"></i> Modelos de negocio claros</div>
+                          </div>
+                          <div class="col-12 col-sm-6">
+                            <div class="service-chip"><i class="bi bi-check2-circle"></i> Herramientas de liderazgo</div>
+                          </div>
+                          <div class="col-12 col-sm-6">
+                            <div class="service-chip"><i class="bi bi-check2-circle"></i> Ejercicios prácticos</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="mt-4">
+                        <p class="text-muted mb-0">Incluye acceso a recursos descargables y una guía de acción semanal.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Conferencias -->
+            <div class="tab-pane fade show active" id="conferencias-pane" role="tabpanel" aria-labelledby="conferencias-tab" tabindex="0">
+              <div class="services-panel">
+                <div class="row g-4 align-items-center">
+                  <div class="col-12 col-lg-5">
+                    <div class="card service-card h-100">
+                      <div class="card-body">
+                        <h5 class="card-title">Conferencia: Liderazgo con Propósito</h5>
+                        <p class="text-muted">Un encuentro intensivo para activar tu plan de crecimiento.</p>
+                        <div class="service-meta">
+                          <span class="service-chip"><i class="bi bi-geo-alt"></i> SJL, Lima, Perú</span>
+                          <span class="service-chip"><i class="bi bi-calendar-event"></i> 24 de julio de 2026</span>
+                        </div>
+                        <a href="#" class="btn btn-outline-primary w-100 mt-3">Registro inmediato</a> 
+                      </div>
+                      <div class="mt-3 p-3 rounded-3 bg-light">
+                        <h6 class="text-uppercase text-muted small mb-2">Incluye</h6>
+                        <ul class="list-unstyled mb-0">
+                          <li class="mb-1"><i class="bi bi-check-circle-fill text-primary me-2"></i>Sesión presencial + streaming</li>
+                          <li class="mb-1"><i class="bi bi-check-circle-fill text-primary me-2"></i>Panel de preguntas con Niel</li>
+                          <li class="mb-0"><i class="bi bi-check-circle-fill text-primary me-2"></i>Material descargable</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-7">
+                    <div class="conferencia-foto-wrapper rounded-4 overflow-hidden">
+                      <img src="../img/op3lector.jpg" alt="Niel Arroe conferenciando" class="w-100 h-100 object-fit-cover">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Recursos gratuitos -->
+            <div class="tab-pane fade" id="recursos-pane" role="tabpanel" aria-labelledby="recursos-tab" tabindex="0">
+              <div class="services-panel">
+                <div class="row g-3 services-grid">
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <d
+                    iv class="card service-card h-100">
+                      <div class="card-body">
+                        <h6 class="fw-semibold">Revista 01</h6>
+                        <p class="text-muted mb-0">Próximamente irán revistas.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card service-card h-100">
+                      <div class="card-body">
+                        <h6 class="fw-semibold">Revista 02</h6>
+                        <p class="text-muted mb-0">Próximamente irán revistas.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card service-card h-100">
+                      <div class="card-body">
+                        <h6 class="fw-semibold">Revista 03</h6>
+                        <p class="text-muted mb-0">Próximamente irán revistas.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card service-card h-100">
+                      <div class="card-body">
+                        <h6 class="fw-semibold">Revista 04</h6>
+                        <p class="text-muted mb-0">Próximamente irán revistas.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card service-card h-100">
+                      <div class="card-body">
+                        <h6 class="fw-semibold">Revista 05</h6>
+                        <p class="text-muted mb-0">Próximamente irán revistas.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card service-card h-100">
+                      <div class="card-body">
+                        <h6 class="fw-semibold">Revista 06</h6>
+                        <p class="text-muted mb-0">Próximamente irán revistas.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Mentorías (aun en construcción) -->
+            <div class="tab-pane fade" id="mentorias-pane" role="tabpanel" aria-labelledby="mentorias-tab" tabindex="0">
+              <div class="services-panel">
+                <div class="services-empty">
+                  <i class="bi bi-cone-striped display-6 text-primary"></i>
+                  <h5 class="fw-semibold mt-3">Mentorías en construcción</h5>
+                  <p class="text-muted mb-0">Estamos preparando una experiencia personalizada. Muy pronto abrimos cupos.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+       
 
       <!-- SECCION TESTIOMONIOS -->
        <section class="container">
@@ -248,7 +427,6 @@
        </section>
 
      
-
     <!-- <p>JS de bootstrap</p> -->
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>

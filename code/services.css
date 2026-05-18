@@ -1,0 +1,112 @@
+/* ============ SERVICIOS ============ */
+.services-section {
+    background: #ffffff;
+    padding: 4rem 0 5rem;
+    color: #1C2E40;
+}
+
+.services-intro {
+    max-width: 620px;
+}
+
+.services-tabs {
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.services-tabs .nav-link {
+    color: #666;
+    font-weight: 600;
+    padding: 0.75rem 0;
+}
+
+.services-tabs .nav-link.active {
+    color: #1C2E40;
+    border-bottom: 3px solid #257BEB;
+}
+
+.services-tabs .nav-link::before {
+    display: none;
+}
+
+.services-panel {
+    background: #ffffff;
+    border-radius: 24px;
+    padding: 2.5rem;
+    border: 1px solid #e8e8e8;
+    box-shadow: 0 14px 28px rgba(28, 46, 64, 0.08);
+}
+
+.service-card {
+    border: 1px solid #e8e8e8;
+    border-radius: 20px;
+    background: #ffffff;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 30px rgba(37, 123, 235, 0.12);
+}
+
+.service-card .card-img-top {
+    height: 360px;
+    object-fit: contain;
+    background: #f8f9fa;
+    padding: 0.75rem;
+}
+
+.service-meta {
+    display: grid;
+    gap: 0.5rem;
+}
+
+.service-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    background: #f1f6ff;
+    color: #1C2E40;
+    padding: 0.35rem 0.75rem;
+    border-radius: 999px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.service-chip i,
+.services-empty i {
+    color: #257BEB;
+}
+
+.services-grid .service-card {
+    border-style: dashed;
+}
+
+.services-empty {
+    border: 1px dashed #e8e8e8;
+    border-radius: 20px;
+    padding: 2.5rem;
+    text-align: center;
+    background: #ffffff;
+    color: #666;
+}
+
+.services-section .text-muted {
+    color: #666 !important;
+}
+
+.services-section .badge.text-bg-primary {
+    color: #ffffff !important;
+    background-color: #257BEB !important;
+}
+
+.services-section .text-primary {
+    color: #257BEB !important;
+}
+
+@media (max-width: 768px) {
+    .services-panel {
+        padding: 1.75rem;
+        
+    }
+}
