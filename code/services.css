@@ -7,26 +7,37 @@
 
 .services-intro {
     max-width: 620px;
+    
 }
 
 .services-tabs {
     border-bottom: 1px solid #e8e8e8;
+    justify-content: center;
+    border-bottom: 1px solid #dee2e6;
+    gap: 1.6rem;
 }
 
 .services-tabs .nav-link {
     color: #666;
     font-weight: 600;
-    padding: 0.75rem 0;
+    /* padding: 0.75rem 0; */
+    padding: 12px 8px;
+    font-size: 1rem;
+    /* border: none; */
+
+    
 }
 
 .services-tabs .nav-link.active {
     color: #1C2E40;
     border-bottom: 3px solid #257BEB;
+    font-weight: 650;
 }
 
 .services-tabs .nav-link::before {
     display: none;
 }
+
 
 .services-panel {
     background: #ffffff;
@@ -37,6 +48,8 @@
 }
 
 .service-card {
+
+    padding: 0.75rem;
     border: 1px solid #e8e8e8;
     border-radius: 20px;
     background: #ffffff;
@@ -44,17 +57,30 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.service-card img {
+    width: 100%;
+    max-height: 510px;
+    object-fit: cover;
+    object-position: center;
+}
+
 .service-card:hover {
     transform: translateY(-6px);
     box-shadow: 0 16px 30px rgba(37, 123, 235, 0.12);
 }
 
-.service-card .card-img-top {
-    height: 360px;
+.titulo-libro h5 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #1C2E40;
+}
+
+/* .service-libro .card-img-top {
+    height: 400px;
     object-fit: contain;
     background: #f8f9fa;
     padding: 0.75rem;
-}
+} */
 
 .service-meta {
     display: grid;
@@ -75,6 +101,14 @@
 
 .service-chip i,
 .services-empty i {
+    color: #257BEB;
+}
+
+.service-chip {
+    transition: color 0.2s;
+}
+
+.service-chip:hover {
     color: #257BEB;
 }
 
