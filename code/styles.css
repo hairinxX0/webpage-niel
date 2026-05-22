@@ -20,6 +20,9 @@ section [ id]{
     padding: 0.5rem;
     /* background-color: #fff; */
      background-color: #0D1B2A;
+    --bs-navbar-color: #e0e0e9;
+    --bs-navbar-hover-color: #257BEB;
+    --bs-navbar-active-color: #257BEB;
 }
 
 .navbar-nav{
@@ -71,7 +74,7 @@ section [ id]{
 }
 
 .nav-link:hover, .nav-link.active {
-    color: #ffffff;
+    color: #257BEB;
     font-weight: 500;
 }
 
@@ -84,7 +87,7 @@ section [ id]{
         transform: translateX(-50%);
         width: 0%;
         height: 3px;
-        background-color: #1a9fec;
+        background-color: #257BEB;
         visibility: hidden;
         transition: 0.3s ease-in-out; 
     }
@@ -123,6 +126,12 @@ section [ id]{
 
 .offcanvas .dropdown-item:hover {
     color: #257BEB ;
+    background-color: rgba(37,123,235,0.1);
+}
+
+.offcanvas .dropdown-item.active,
+.dropdown-menu .dropdown-item.active {
+    color: #257BEB;
     background-color: rgba(37,123,235,0.1);
 }
 
@@ -173,7 +182,7 @@ section [ id]{
 
 /* p */
 .hero-subtitle {
-    font-size: clamp(1.6rem, 2.7vw, 1.7rem); /* agrandar el texto */
+    font-size: 1.3rem;           /* más pequeño en móvil */
     color: #ffffff;                            
     font-weight: 550;                          /* un poco más de grosor */
     line-height: 1.8;
@@ -244,30 +253,24 @@ section [ id]{
 /* <----------------------------------> */
 
 /* Botones En celular  */
-@media (max-width:768px) {
-    .hero-buttons {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;    /*espacio entre botones*/
-    }
-    .btn-C-oportunidad, .btn-conoce-niel {
-        text-align: center;
-        margin-right: 0;
-} 
-}
-
 /* hero en celular (AUN FALTA) */
 @media (max-width: 768px){
     .hero-section{
         min-height: 70vh;
-        background-position: 74% center;
+        background-position: 75% center;
         text-align: center;
         justify-items: center;
         align-items: center;
+        text-align: center; 
+    }
+    .hero-subtitle {
+    font-size: 1.1rem;
     }
     .hero-buttons {
+        display: flex;
         flex-direction: column; 
         width: 100%;
+        gap: 1rem;
     }
 
     .btn-C-oportunidad,
