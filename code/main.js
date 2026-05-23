@@ -13,27 +13,12 @@
 //     });
 // }
 
-//secciones visibles navbar activa
-const navLinks = Array.from(
-    document.querySelectorAll('.navbar a[href^="#"]')
-).filter(link => link.hash && link.hash !== "#");
+//navbar activa 
+const links = document.querySelectorAll(".navbar a");
 
-const sections = navLinks
-    .map(link => document.querySelector(link.hash))
-    .filter(Boolean);
-
-if (sections.length) {
-    const setActive = (id) => navLinks.forEach(link => {
-        link.classList.toggle("active", link.hash === `#${id}`);
-    });
-
-    const observer = new IntersectionObserver((entries) => {
-        const visible = entries.find(entry => entry.isIntersecting);
-
-        if (visible) {
-            setActive(visible.target.id);
-        }
-    }, { rootMargin: "-30% 0px -55% 0px", threshold: 0.1 });
-
-    sections.forEach(section => observer.observe(section));
-}
+links.forEach(link => {
+  link.addEventListener("click", () => {
+    links.forEach(l => l.classList.remove("active"));
+    link.classList.add("active");
+  });
+});

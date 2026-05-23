@@ -20,9 +20,18 @@ section [ id]{
     padding: 0.5rem;
     /* background-color: #fff; */
      background-color: #0D1B2A;
-    --bs-navbar-color: #e0e0e9;
-    --bs-navbar-hover-color: #257BEB;
+    /* --bs-navbar-color: #e0e0e9;
+    --bs-navbar-hover-color: #257BEB;*/
     --bs-navbar-active-color: #257BEB;
+}
+
+.navbar .nav-link.active {
+  color: #257BEB;
+}
+
+.navbar .nav-link.active,
+.navbar .nav-link.dropdown-toggle.active {
+  color: #257BEB;
 }
 
 .navbar-nav{
@@ -382,7 +391,7 @@ h1.niel-title{
 
 .sobre-niel .card-logro:hover {
     transform: translateY(-6px);
-    box-shadow: 0 12px 30px rgba(0,0,0,0.12) !important;
+    /* box-shadow: 0 12px 30px rgba(0,0,0,0.12) !important; */
 }
 
 
