@@ -1,0 +1,130 @@
+/* <============= Sección: Conoce a Niel =============> */
+p{
+    font-size: 1.1rem;
+}
+.sobre-mi {
+    background-color: #F5EFEB;
+    padding: 2.5rem 0.5rem;
+}
+
+/* Etiqueta pequeña arriba */
+.niel {
+    color: #257BEB;
+    letter-spacing: 2px;
+    font-size: 0.85rem;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+/* Línea decorativa antes del título */
+.niel::before {
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 2px;
+    background: #257BEB;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/* Títulos */
+.sobre-mi-titulo {
+    font-size: clamp(1.6rem, 3vw, 2.2rem);
+    font-weight: 700;
+    color: #1C2E40;
+    margin-bottom: 0.5rem;
+}
+
+.sobre-mi-subtitulo {
+    font-size: 1.1rem;
+    color: #555;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+}
+
+/* Párrafos */
+.sobre-mi-parrafo {
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.imagenes-sobre-mi{
+    object-fit: cover;
+    gap: 1.56rem;
+}
+/* Imágeneshover suave */
+
+.img-sobre-mi :hover{
+    transform: scale(1.03);
+    transition: all 0.3s;
+
+}
+
+
+.mision{
+    border-left: 4px solid #257BEB;
+    background: #F5EFEB;
+    border-radius: 0 8px 8px 0;
+    padding: 16px 20px;
+    font-size: 1.05rem;
+    color: #333;
+}
+
+.btn-primary:hover {
+    background-color: #1a9fec;
+    transform: scale(1.05);
+    transition: 0.3s;
+    margin: 0;
+    border: none;
+}
+.icon-social{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1C2E40;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+.icon-social:hover{
+    transform: translateY(-3px);
+    background: #257BEB;
+    color: #fff;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+    .sobre-mi {
+        padding: 3rem 0;
+    }
+}
+
+/* logros cards */
+
+.stat-icon {
+    width: 52px;
+    height: 51px;
+    background: #e8f1fd;  
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #257BEB;
+    font-size: 1.4rem;
+}
+
+/* hover cards logros */
+.sobre-mi .card-logro {
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.sobre-mi .card-logro:hover {
+    transform: translateY(-6px);
+    /* box-shadow: 0 12px 30px rgba(0,0,0,0.12) !important; */
+}
