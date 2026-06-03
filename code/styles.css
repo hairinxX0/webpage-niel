@@ -305,7 +305,25 @@ section [ id]{
 
 }
 
+/* contacto css */
+.contacto-card {
+    background: #ffffff;
+    border: 1px solid #e8e8e8;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
 
+.contacto-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+.contacto-icono {
+    min-width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 
 
