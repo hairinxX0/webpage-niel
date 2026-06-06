@@ -306,6 +306,10 @@ section [ id]{
 }
 
 /* contacto css */
+
+.contacto-section{
+     background: #f8f9fa;
+}
 .contacto-card {
     background: #ffffff;
     border: 1px solid #e8e8e8;
@@ -325,6 +329,15 @@ section [ id]{
     justify-content: center;
 }
 
+.formulario{
+    background: #ffffff;
+    border: 1px solid #e8e8e8;
+    padding: 30px;   
+}
+
+.form-label{
+    padding-top: 15px;
+}
 
 
 

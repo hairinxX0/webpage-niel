@@ -24,6 +24,7 @@ if (sections.length) {
     sections.forEach(section => observer.observe(section));
 }
 
+ document.getElementById('year').textContent = new Date().getFullYear();
 
 // Cerrar el menu hamburguesa al hacer click en un enlace
 // const offcanvasElement = document.getElementById("offcanvasNavbar");

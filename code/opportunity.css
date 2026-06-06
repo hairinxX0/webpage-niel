@@ -6,10 +6,10 @@
 
 
 .fondo-oportunidad {
-    background: url('../img/oportunidad.jpg') no-repeat center center;
+    background: url('../img/oportunidad2.jpg') no-repeat center center;
     background-size: cover; 
     position: relative;
-    min-height: 87vh;    /* menos alto que el hero */
+    min-height: 90vh;    /* menos alto que el hero */
     display: flex;
     align-items: center;
 }

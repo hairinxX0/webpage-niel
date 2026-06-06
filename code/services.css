@@ -59,7 +59,7 @@
 
 .service-card img {
     width: 100%;
-    max-height: 500px;
+    max-height: 490px;
     object-fit: cover;
     object-position: center;
 }
