@@ -1,146 +1,180 @@
 /* ============ SERVICIOS ============ */
+/*
+   Mejoras visuales y estructurales para la sección "Libros".
+   - No se cambian colores, tipografías ni imágenes.
+   - Solo se mejora jerarquía, espaciado, bordes y distribución.
+*/
+
 .services-section {
     background: #ffffff;
-    padding: 4rem 0 5rem;
+    padding: 2.25rem 0 3rem; /* reducir espaciado general para mayor compactación */
     color: #1C2E40;
 }
 
-.services-intro {
-    max-width: 620px;
-    
-}
+.services-intro { max-width: 620px; }
 
+/* ------------ Tabs ------------ */
 .services-tabs {
-    border-bottom: 1px solid #e8e8e8;
-    justify-content: center;
     border-bottom: 1px solid #dee2e6;
+    justify-content: center;
     gap: 1.6rem;
 }
-
 .services-tabs .nav-link {
     color: #666;
     font-weight: 600;
-    /* padding: 0.75rem 0; */
-    padding: 12px 8px;
+    padding: 10px 8px;
     font-size: 1rem;
-    /* border: none; */
-
-    
 }
-
 .services-tabs .nav-link.active {
     color: #1C2E40;
     border-bottom: 3px solid #257BEB;
     font-weight: 650;
 }
+.services-tabs .nav-link::before { display: none; }
 
-.services-tabs .nav-link::before {
-    display: none;
+/* ==========================================
+   TÍTULO Y SUBTÍTULO (centrado y ancho)
+   ========================================== */
+.titulo-libro { text-align: center; margin-bottom: 1rem; }
+.titulo-libro h2 { margin-bottom: .25rem; }
+.titulo-libro p {
+    margin: 0 auto;
+    color: #666;
+    max-width: 760px; /* limitar ancho para mejor lectura */
+    font-size: 1.02rem;
+    line-height: 1.4;
 }
 
-
-.services-panel {
+/* ==========================================
+   LIBRO: CONTENEDOR PRINCIPAL
+   - Dos columnas (izq: portada, der: info)
+   - Alineado verticalmente y bloques bien definidos
+   ========================================== */
+.libro-panel {
+    border-radius: 20px; 
+    border: 1px solid rgba(28,46,64,0.06); /* borde sutil */
     background: #ffffff;
-    border-radius: 24px;
-    padding: 2.5rem;
-    border: 1px solid #e8e8e8;
-    box-shadow: 0 14px 28px rgba(28, 46, 64, 0.08);
+    padding: 0.6rem; /* contenedor compacto */
+    transition: box-shadow .20s ease, transform .12s ease;
 }
+.libro-panel:hover { box-shadow: 0 16px 30px rgba(28,46,64,0.06); transform: translateY(-3px); }
 
-.service-card {
+/* asegurar que ambas columnas llenen la misma altura */
+.libro-panel .row { align-items: stretch; }
+.libro-panel .row > [class*="col-"] { display: flex; flex-direction: column; }
 
-    padding: 0.75rem;
-    border: 1px solid #e8e8e8;
-    border-radius: 20px;
-    background: #ffffff;
+/* ----- Imagen del libro (columna izquierda) ----- */
+.libro-panel .service-card {
+    padding: 0;
+    border: 0;
+    border-radius: 18px;
     overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: transparent;
+    display: flex;
+    align-items: stretch;
+    height: 100%;
 }
-
-.service-card img {
+.libro-panel .service-card img {
     width: 100%;
-    max-height: 490px;
+    height: 100%;
+    max-height: 520px; /* mayor presencia visual */
     object-fit: cover;
     object-position: center;
+    border-radius: 16px;
+    box-shadow: 0 10px 26px rgba(28,46,64,0.08);
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+.libro-panel .service-card:hover img { transform: scale(1.02); box-shadow: 0 18px 40px rgba(28,46,64,0.10); }
+
+/* información */
+.libro-panel .h-100.p-4 {
+    padding: 1rem; /* menor padding para no exceder altura de la imagen */
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    background: transparent;
+    border-radius: 16px;
 }
 
-.service-card:hover {
-    transform: translateY(-6px);
-    /* box-shadow: 0 16px 30px rgba(37, 123, 235, 0.12); */
-}
-
-.titulo-libro h5 {
-    font-size: 1.4rem;
-    font-weight: 700;
-    color: #1C2E40;
-}
-
-/* .service-libro .card-img-top {
-    height: 400px;
-    object-fit: contain;
-    background: #f8f9fa;
-    padding: 0.75rem;
-} */
-
-.service-meta {
-    display: grid;
-    gap: 0.5rem;
-}
-
-.service-chip {
-    display: inline-flex;
+/* ==========================================
+   BLOQUE DE AUTOR
+   - Foto, nombre y fecha en alineación horizontal
+   ========================================== */
+.libro-panel .autor-libro {
+    display: flex;
     align-items: center;
-    gap: 0.45rem;
-    background: #f1f6ff;
+    gap: .75rem;
+    padding: .35rem .25rem;
+    border-bottom: 1px solid #f0f0f0;
+    margin-bottom: .6rem;
+}
+.autor-foto { width: 56px; height: 56px; object-fit: cover; border-radius: 50%; }
+.autor-libro p { margin: 0; color: #1C2E40; font-weight: 600; font-size: .95rem; }
+
+/* ==========================================
+   BLOQUE DE CARACTERÍSTICAS (GRID)
+   - CSS Grid: 2 col escritorio, 1 col móvil
+   - Cada elemento con padding, border-radius y borde suave
+   ========================================== */
+.bullets-libro .row {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: .6rem;
+    margin: 0; /* remover márgenes del row */
+}
+.bullets-libro .col-12 { padding: 0; }
+.bullets-libro .service-chip {
+    display: flex !important;
+    align-items: center;
+    gap: .5rem;
+    padding: .55rem .75rem;
+    border-radius: 12px;
+    border: 1px solid #eef2f5;
+    background: #ffffff;
     color: #1C2E40;
-    padding: 0.35rem 0.75rem;
-    border-radius: 999px;
-    font-size: 0.9rem;
     font-weight: 600;
 }
+.bullets-libro .service-chip i { color: #257BEB; font-size: 1.05rem; }
 
-.service-chip i,
-.services-empty i {
-    color: #257BEB;
-}
-
-.service-chip {
-    transition: color 0.2s;
-}
-
-.service-chip:hover {
-    color: #257BEB;
-}
-
-.services-grid .service-card {
-    border-style: dashed;
-}
-
-.services-empty {
-    border: 1px dashed #e8e8e8;
-    border-radius: 20px;
-    padding: 2.5rem;
-    text-align: center;
+/* ==========================================
+   BLOQUE DE CITA DESTACADA
+   - Tarjeta independiente con mayor protagonismo
+   ========================================== */
+.frase-libro {
+    border-radius: 12px;
+    border: 1px solid #eef1f4;
+    padding: .9rem 1rem;
     background: #ffffff;
-    color: #666;
+    text-align: center;
+    margin: .5rem 0;
 }
+.frase-libro p { margin: 0; font-size: 1.02rem; font-style: italic; color: #1C2E40; }
 
-.services-section .text-muted {
-    color: #666 !important;
-}
+/* ==========================================
+   BOTONES CTA
+   - Grupo unificado: mismo ancho/altura
+   - Responsive: apilan en móvil
+   ========================================== */
+.botones-libro { display: flex; gap: .75rem; }
+.botones-libro .btn { flex: 1 1 0; min-height: 48px; display: inline-flex; align-items: center; justify-content: center; border-radius: 10px; }
+.botones-libro .btn.w-50 { width: auto; }
 
-.services-section .badge.text-bg-primary {
-    color: #ffffff !important;
-    background-color: #257BEB !important;
-}
+@media (max-width: 576px) { .botones-libro { flex-direction: column; } .botones-libro .btn { width: 100%; } }
 
-.services-section .text-primary {
-    color: #257BEB !important;
-}
+/* =========================
+   Ajustes generales y utilidades
+   ========================= */
+.service-meta { display: grid; gap: 0.5rem; }
+.services-grid .service-card { border-style: dashed; }
+.services-empty { border: 1px dashed #e8e8e8; border-radius: 20px; padding: 2.5rem; text-align: center; background: #ffffff; color: #666; }
+.services-section .text-muted { color: #666 !important; }
+.services-section .badge.text-bg-primary { color: #ffffff !important; background-color: #257BEB !important; }
+.services-section .text-primary { color: #257BEB !important; }
 
 @media (max-width: 768px) {
-    .services-panel {
-        padding: 1.75rem;
-        
-    }
+    .bullets-libro .row { grid-template-columns: 1fr; }
+    .titulo-libro p { max-width: 92%; }
+    .libro-panel { padding: .8rem; }
+    .libro-panel .h-100.p-4 { padding: 1rem; }
 }
+
